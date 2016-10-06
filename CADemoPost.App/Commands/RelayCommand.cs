@@ -1,22 +1,5 @@
-﻿// ***********************************************************************
-// Assembly         : CADemoPost.App
-// Author           : TV
-// Created          : 10-02-2016
-//
-// Last Modified By : TV
-// Last Modified On : 10-02-2016
-// ***********************************************************************
-// <copyright file="RelayCommand.cs" company="">
-//     Copyright ©  2016
-// </copyright>
-// <summary></summary>
-// ***********************************************************************
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace CADemoPost.App.Commands

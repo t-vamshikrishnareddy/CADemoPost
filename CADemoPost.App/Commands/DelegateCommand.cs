@@ -1,21 +1,4 @@
-﻿// ***********************************************************************
-// Assembly         : CADemoPost.App
-// Author           : TV
-// Created          : 10-01-2016
-//
-// Last Modified By : TV
-// Last Modified On : 10-01-2016
-// ***********************************************************************
-// <copyright file="DelegateCommand.cs" company="">
-//     Copyright ©  2016
-// </copyright>
-// <summary></summary>
-// ***********************************************************************
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Input;
 
 namespace CADemoPost.App.Commands

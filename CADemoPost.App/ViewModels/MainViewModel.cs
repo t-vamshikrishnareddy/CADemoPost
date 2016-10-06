@@ -1,29 +1,12 @@
-﻿// ***********************************************************************
-// Assembly         : CADemoPost.App
-// Author           : TV
-// Created          : 10-01-2016
-//
-// Last Modified By : TV
-// Last Modified On : 10-02-2016
-// ***********************************************************************
-// <copyright file="MainViewModel.cs" company="">
-//     Copyright ©  2016
-// </copyright>
-// <summary></summary>
-// ***********************************************************************
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using CaDemoPost.VM;
+﻿using CaDemoPost.VM;
 using CADemoPost.App.Commands;
-using CADemoPost.DTO.Enum;
 using CADemoPost.DTO.Models;
 using CADemoPost.Proxy;
 using CADemoPost.Proxy.Interfaces;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Input;
+using System.Configuration;
 
 namespace CADemoPost.App.ViewModels
 {
@@ -47,6 +30,8 @@ namespace CADemoPost.App.ViewModels
         /// </summary>
         /// <value>The proxy.</value>
         public IProxy<PostViewModel, Post> Proxy { get; set; }
+
+        public string SortOrder { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="MainViewModel"/> class.
         /// </summary>
@@ -55,6 +40,7 @@ namespace CADemoPost.App.ViewModels
         {
             this._MainWindow = mainWindow;
             PostViewModels = GetData();
+            SortOrder = "Descending";
         }
 
         /// <summary>
@@ -63,7 +49,7 @@ namespace CADemoPost.App.ViewModels
         /// <returns>IEnumerable&lt;PostViewModel&gt;.</returns>
         private IEnumerable<PostViewModel> GetData()
         {
-            Proxy = new Proxy<PostViewModel, Post>(@"http://jsonplaceholder.typicode.com/posts");
+            Proxy = new Proxy<PostViewModel, Post>(ConfigurationSettings.AppSettings["Url"]);
             return Proxy.GetAll();
         }
         /// <summary>
@@ -83,7 +69,16 @@ namespace CADemoPost.App.ViewModels
         /// </summary>
         private void Refresh()
         {
-            PostViewModels = GetData();
+            if (string.CompareOrdinal(SortOrder, "Ascending") == 0)
+            {
+                SortOrder = "Descending";
+                PostViewModels = GetData().OrderBy(i => i.Id);
+            }
+            else
+            {
+                SortOrder = "Ascending";
+                PostViewModels = GetData().OrderByDescending(i => i.Id);
+            }
             NotifyPropertyChanged("PostViewModels");
         }
 

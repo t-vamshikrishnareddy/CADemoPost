@@ -1,17 +1,4 @@
-﻿// ***********************************************************************
-// Assembly         : CADemoPost.App
-// Author           : TV
-// Created          : 10-02-2016
-//
-// Last Modified By : TV
-// Last Modified On : 10-02-2016
-// ***********************************************************************
-// <copyright file="ViewPostViewModel.cs" company="">
-//     Copyright ©  2016
-// </copyright>
-// <summary></summary>
-// ***********************************************************************
-using CaDemoPost.VM;
+﻿using CaDemoPost.VM;
 using Newtonsoft.Json;
 
 namespace CADemoPost.App.ViewModels

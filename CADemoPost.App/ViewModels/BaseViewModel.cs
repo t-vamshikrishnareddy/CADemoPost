@@ -1,22 +1,4 @@
-﻿// ***********************************************************************
-// Assembly         : CADemoPost.App
-// Author           : TV
-// Created          : 10-02-2016
-//
-// Last Modified By : TV
-// Last Modified On : 10-02-2016
-// ***********************************************************************
-// <copyright file="BaseViewModel.cs" company="">
-//     Copyright ©  2016
-// </copyright>
-// <summary></summary>
-// ***********************************************************************
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace CADemoPost.App.ViewModels
 {
