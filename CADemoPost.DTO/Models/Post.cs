@@ -1,22 +1,4 @@
-﻿// ***********************************************************************
-// Assembly         : CADemoPost.DTO
-// Author           : TV
-// Created          : 10-01-2016
-//
-// Last Modified By : TV
-// Last Modified On : 10-01-2016
-// ***********************************************************************
-// <copyright file="Post.cs" company="">
-//     Copyright ©  2016
-// </copyright>
-// <summary></summary>
-// ***********************************************************************
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace CADemoPost.DTO.Models
 {
