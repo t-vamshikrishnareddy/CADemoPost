@@ -1,22 +1,4 @@
-﻿// ***********************************************************************
-// Assembly         : CADemoPost.Proxy
-// Author           : TV
-// Created          : 10-01-2016
-//
-// Last Modified By : TV
-// Last Modified On : 10-02-2016
-// ***********************************************************************
-// <copyright file="IProxy.cs" company="">
-//     Copyright ©  2016
-// </copyright>
-// <summary></summary>
-// ***********************************************************************
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CaDemoPost.VM;
+﻿using System.Collections.Generic;
 
 namespace CADemoPost.Proxy.Interfaces
 {

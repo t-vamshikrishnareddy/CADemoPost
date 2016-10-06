@@ -1,23 +1,6 @@
-﻿// ***********************************************************************
-// Assembly         : CaDemoPost.VM
-// Author           : TV
-// Created          : 10-01-2016
-//
-// Last Modified By : TV
-// Last Modified On : 10-02-2016
-// ***********************************************************************
-// <copyright file="PostViewModel.cs" company="">
-//     Copyright ©  2016
-// </copyright>
-// <summary></summary>
-// ***********************************************************************
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using CaDemoPost.VM.ViewModels;
+using  System.Linq;
 
 namespace CaDemoPost.VM
 {
@@ -99,6 +82,5 @@ namespace CaDemoPost.VM
                 NotifyPropertyChanged("Body");
             }
         }
-
     }
 }

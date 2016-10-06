@@ -1,17 +1,4 @@
-﻿// ***********************************************************************
-// Assembly         : CaDemoPost.VM
-// Author           : TV
-// Created          : 10-01-2016
-//
-// Last Modified By : TV
-// Last Modified On : 10-02-2016
-// ***********************************************************************
-// <copyright file="BaseViewModel.cs" company="">
-//     Copyright ©  2016
-// </copyright>
-// <summary></summary>
-// ***********************************************************************
-using System.ComponentModel;
+﻿using System.ComponentModel;
 
 namespace CaDemoPost.VM.ViewModels
 {

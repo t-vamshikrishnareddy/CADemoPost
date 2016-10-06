@@ -1,17 +1,4 @@
-﻿// ***********************************************************************
-// Assembly         : CADemoPost.Proxy
-// Author           : TV
-// Created          : 10-01-2016
-//
-// Last Modified By : TV
-// Last Modified On : 10-02-2016
-// ***********************************************************************
-// <copyright file="Proxy.cs" company="">
-//     Copyright ©  2016
-// </copyright>
-// <summary></summary>
-// ***********************************************************************
-using AutoMapper;
+﻿using AutoMapper;
 using CADemoPost.Proxy.Interfaces;
 using CADemoPost.WebClient.Implementations;
 using CADemoPost.WebClient.Interfaces;
