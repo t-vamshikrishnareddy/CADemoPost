@@ -55,6 +55,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CADemoPost.DTO\CADemoPost.DTO.csproj">
+      <Project>{58efad65-d4d9-4f04-a0f1-32c0039bf31b}</Project>
+      <Name>CADemoPost.DTO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CADemoPost.WebClient\CADemoPost.WebClient.csproj">
       <Project>{88035B6E-7410-4DA2-B478-B10AA47B47E6}</Project>
       <Name>CADemoPost.WebClient</Name>

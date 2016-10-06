@@ -11,3 +11,5 @@ C:\Users\TV\Documents\Visual Studio 2015\Projects\CADemoPost\CADemoPost.WebClien
 C:\Users\TV\Documents\Visual Studio 2015\Projects\CADemoPost\CADemoPost.WebClientTests1\obj\Debug\CADemoPost.WebClientTests1.csprojResolveAssemblyReference.cache
 C:\Users\TV\Documents\Visual Studio 2015\Projects\CADemoPost\CADemoPost.WebClientTests1\obj\Debug\CADemoPost.WebClientTests1.dll
 C:\Users\TV\Documents\Visual Studio 2015\Projects\CADemoPost\CADemoPost.WebClientTests1\obj\Debug\CADemoPost.WebClientTests1.pdb
+C:\Users\TV\Documents\Visual Studio 2015\Projects\CADemoPost\CADemoPost.WebClientTests1\bin\Debug\CADemoPost.DTO.dll
+C:\Users\TV\Documents\Visual Studio 2015\Projects\CADemoPost\CADemoPost.WebClientTests1\bin\Debug\CADemoPost.DTO.pdb

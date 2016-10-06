@@ -1,24 +1,7 @@
-﻿// ***********************************************************************
-// Assembly         : CADemoPost.WebClient
-// Author           : TV
-// Created          : 10-01-2016
-//
-// Last Modified By : TV
-// Last Modified On : 10-02-2016
-// ***********************************************************************
-// <copyright file="WebClient.cs" company="">
-//     Copyright ©  2016
-// </copyright>
-// <summary></summary>
-// ***********************************************************************
+﻿using CADemoPost.WebClient.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using CADemoPost.DTO.Models;
-using CADemoPost.WebClient.Interfaces;
 
 namespace CADemoPost.WebClient.Implementations
 {
@@ -63,6 +46,8 @@ namespace CADemoPost.WebClient.Implementations
             }
             catch (AggregateException exception)
             {
+                //Logging to Database if any
+                //Used catch if we have any network issues
                 return new List<T>();
             }
         } 

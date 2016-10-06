@@ -1,12 +1,6 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CADemoPost.WebClient.Implementations;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CADemoPost.DTO.Models;
+﻿using CADemoPost.DTO.Models;
 using CADemoPost.WebClient.Interfaces;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CADemoPost.WebClient.Implementations.Tests
 {
@@ -17,7 +11,7 @@ namespace CADemoPost.WebClient.Implementations.Tests
         public void GetPostsTest()
         {
             IWebClient<Post> webClient = new WebClient<Post>(@"http://jsonplaceholder.typicode.com/posts");
-            webClient.GetPosts();
+            var list = webClient.GetPosts();
             
             Assert.Fail();
         }
